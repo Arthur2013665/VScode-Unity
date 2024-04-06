@@ -1,0 +1,33 @@
+# Define the main function for the guessing game
+Function guessing_game():
+    Print "Welcome to the Guessing Game!"
+    Print "I'm thinking of a number between 1 and 100. Can you guess it?"
+
+    # Generate a random number between 1 and 100
+    secret_number = Random number between 1 and 100
+
+    # Initialize the number of guesses
+    num_guesses = 0
+
+    # Loop until the player guesses the correct number
+    While True:
+        # Prompt the player to enter a guess
+        player_guess = Input "Enter your guess: "
+
+        # Convert the player's guess to an integer
+        player_guess = Convert player_guess to integer
+
+        # Increment the number of guesses
+        num_guesses = num_guesses + 1
+
+        # Check if the player's guess matches the secret number
+        If player_guess == secret_number:
+            Print "Congratulations! You guessed the number in", num_guesses, "guesses."
+            Break  # Exit the loop
+        Else If player_guess < secret_number:
+            Print "Too low! Try again."
+        Else:
+            Print "Too high! Try again."
+
+# Call the main function to start the game
+guessing_game()
